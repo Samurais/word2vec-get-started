@@ -33,9 +33,10 @@ Word: 家庭  Position in vocabulary: 83
                                             住房                0.645767
                                             初创                0.631415
                                             宝石                0.621161
-                                            家务                0.612938
-                                            家中                
+                                            家务                0.612938              
 ```
+
+> To compute all distances, use ```scripts/dist-analysis.sh MODEL_FILE```
 
 ## [Principal component analysis(PCA)](https://en.wikipedia.org/wiki/Principal_component_analysis)
 
