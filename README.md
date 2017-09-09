@@ -34,12 +34,31 @@ Word: 家庭  Position in vocabulary: 83
                                             初创                0.631415
                                             宝石                0.621161
                                             家务                0.612938
-                                            家中                0.603859
-                                            还为                0.593459
-                                            牧场                0.589468
-                                            家居                0.585816
-                                            居所                0.585174
+                                            家中                
 ```
+
+## [Principal component analysis(PCA)](https://en.wikipedia.org/wiki/Principal_component_analysis)
+
+* deps
+
+[Jupyter Notebook](http://jupyter-notebook.readthedocs.io/en/latest/notebook.html)
+
+### Install
+```
+cd tools/word2vec_boostpy
+python setup.py install
+pip install 
+```
+
+### Run
+```
+./scripts/pca.sh
+```
+
+### Demo
+open ```http://localhost:8888/notebooks/word2vec-get-started.ipynb```
+
+![](./assets/1.png)
 
 # License
 [Apache 2.0](./LICENSE)
