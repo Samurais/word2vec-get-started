@@ -19,8 +19,10 @@ scripts/train.sh
 ```
 
 ## Get similarities
+Post training, a model file is generated in ```tmp```, use ```distance``` to get similarities for words.
+
 ```
-$ distance tmp/iqa.w2v.20170909113039.bin1.neg1.cbow0.win5.iter30.embed100.thr30
+$ src/distance tmp/iqa.w2v.20170909113039.bin1.neg1.cbow0.win5.iter30.embed100.thr30
 Enter word or sentence (EXIT to break): 家庭
 
 Word: 家庭  Position in vocabulary: 83
