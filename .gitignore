@@ -8,3 +8,4 @@ node_modules/
 sftp-config.json
 .DS_Store
 localrc
+.ipynb_checkpoints/
