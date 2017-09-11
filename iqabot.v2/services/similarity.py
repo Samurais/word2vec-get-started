@@ -33,6 +33,7 @@ if sys.version_info[0] < 3:
 import numpy as np
 from config import W2V_CONFIG
 from util import log
+from gensim.models import keyedvectors
 
 # logger
 logger = log.getLogger(__file__)
@@ -43,8 +44,7 @@ def load_model(model_file = W2V_CONFIG["model"], binary=False):
     '''
     if not os.path.exists(model_file):
         raise Exception("Model file does not exist.")
-    from gensim.models.keyedvectors import KeyedVectors
-    return KeyedVectors.load_word2vec_format(model_file, binary=binary, unicode_errors='ignore')
+    return keyedvectors.KeyedVectors.load_word2vec_format(model_file, binary=binary, unicode_errors='ignore')
 
 def resolve_embedding_size(text_format_w2v_model):
     '''

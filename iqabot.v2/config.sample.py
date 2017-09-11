@@ -46,8 +46,7 @@ CORPUS_CONFIG = dict({
 })
 
 W2V_CONFIG = dict({
-    "model": os.path.join(ROOT_PATH, "corpus", "wikidata", "zhwiki-latest-pages-articles", "chs.normalized.wordseg.w2v"),
-    "vocab": os.path.join(ROOT_PATH, "corpus", "wikidata", "zhwiki-latest-pages-articles", "chs.normalized.wordseg.w2v.vocab.gensim")
+    "model": os.path.join(ROOT_PATH, "corpus", "wikidata", "zhwiki-latest-pages-articles", "chs.normalized.wordseg.w2v")
 })
 
 HANLP_CONFIG = dict({
