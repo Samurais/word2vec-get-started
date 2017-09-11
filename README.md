@@ -70,6 +70,8 @@ cp config.sample.py config.py
 python bot.py --query="为什么要获得医疗保险补充保险"
 ```
 
+![](./assets/2.png)
+
 # License
 [Apache 2.0](./LICENSE)
 
