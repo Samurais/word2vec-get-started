@@ -61,6 +61,15 @@ open ```http://localhost:8888/notebooks/word2vec-get-started.ipynb```
 
 ![](./assets/1.png)
 
+## iqabot.v2
+First, run ElasticSearch Service and Hanlp-api Service with [elasticsearch-get-started](https://github.com/Samurais/elasticsearch-get-started).
+
+```
+cd iqabot.v2
+cp config.sample.py config.py
+python bot.py --query="为什么要获得医疗保险补充保险"
+```
+
 # License
 [Apache 2.0](./LICENSE)
 

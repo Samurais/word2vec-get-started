@@ -1,0 +1,8 @@
+numpy==1.12.1
+six==1.10.0
+tqdm==4.11.2
+gensim==2.3.0
+urllib3==1.22
+requests==2.13.0
+elasticsearch==5.3.0
+elasticsearch-dsl==5.3.0
