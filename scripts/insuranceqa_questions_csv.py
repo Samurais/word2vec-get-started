@@ -52,6 +52,6 @@ if __name__ == '__main__':
     for x,y,z in zip(en_zh, zh_tokenized, target):
         # print(x, y, z)
         en_zh_file=os.path.join(curdir, "..", "tmp", x)
-        zh_tokenized_file=os.path.join(curdir, "..", "corpus", y)
-        target=os.path.join(curdir, "..", "tmp", z)
+        zh_tokenized_file=os.path.join(curdir, "..", "tmp", y)
+        target=os.path.join(curdir, "..", "corpus", "insuranceqa", "questions", z)
         generate_category_raw_token_txt(en_zh_file, zh_tokenized_file, target)
