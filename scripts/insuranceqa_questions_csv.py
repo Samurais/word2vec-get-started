@@ -38,11 +38,11 @@ def generate_category_raw_token_txt(en_zh_file, zh_tokenized_file, target):
     with gzip.open(en_zh_file, "r") as fin1, \
         open(zh_tokenized_file, "r") as fin2,\
         open(target, "w") as fout:
-        fout.write("\t".join(["索引", "类别", "原始问", "分词"]) + "\n")
+        fout.write("\t".join(["索引", "类别", "原始问", "英语", "分词"]) + "\n")
         for index,line in enumerate(zip(fin1, sorted(fin2, key=lambda x: int(x.split(" ++$++ ")[0])))):
             en_zh = line[0].split(" ++$++ ")
             zh_token = line[1].split(" ++$++ ")
-            interest = [str(index), en_zh[1], en_zh[2], zh_token[1]]
+            interest = [str(index), en_zh[1], en_zh[2], en_zh[3].strip(), zh_token[1]]
             fout.write("\t".join(interest))
 
 if __name__ == '__main__':
