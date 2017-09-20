@@ -1,8 +1,3 @@
-#! /bin/bash 
-###########################################
-#
-###########################################
-
 # constants
 baseDir=$(cd `dirname "$0"`;pwd)
 export PATH=$PATH:$baseDir/../src
