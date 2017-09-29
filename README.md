@@ -48,7 +48,7 @@ Word: 家庭  Position in vocabulary: 83
 ```
 cd tools/word2vec_boostpy
 python setup.py install
-pip install 
+pip install -U numpy matplotlib scipy scikit-learn ipython jupyter 
 ```
 
 ### Run

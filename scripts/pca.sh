@@ -1,6 +1,10 @@
 #! /bin/bash 
 ###########################################
 # start notebook server
+# deps
+# cd tools/word2vec_boostpy
+# python setup.py install
+# pip install -U numpy matplotlib scipy scikit-learn ipython jupyter 
 ###########################################
 
 # constants
